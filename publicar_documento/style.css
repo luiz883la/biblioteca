@@ -17,8 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  top: 0;
-  left: 0;
   align-items: center; 
   padding-left: 10px;
   border-right:solid 2px rgb(229, 228, 228);
@@ -39,6 +37,9 @@ button {
   padding: 10px;
   width: 100%;
 }
+.aviso {
+  color: red;
+}
 .preencher {
   padding-left: 5px;
   font-size: 130%;
@@ -55,18 +56,19 @@ button {
   outline: none;
 }
 .continuar {
+  position: fixed;
   cursor: pointer;
-  align-self: center;
-  width: 88%;
+  bottom: 10px;
+  right: 20px;
+  width: 70%;
   height: 40px;
-  font-size: 20pt;
-  border-radius: 10px;
-  border: 0;
-  background-color: rgb(119, 119, 233);
+  font-size: 1.1em;
   color: white;
+  border: 0;
+  border-radius: 10px;
+  background-color: rgb(119, 119, 233);
 }.continuar:hover {
-  background-color: rgb(117, 117, 230);
-  scale: 103%;
+  background-color: rgb(102, 102, 221);
 }
 .checkbox {
   width: 20px;
@@ -96,11 +98,10 @@ button {
   cursor: pointer;
   position: absolute;
   top: -10px;
-  left: 350px;
+  left: 70%;
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  text-align: center;
   background-color: rgba(65, 69, 90, 0.268);
 }.negrito:hover {
   background: rgba(29, 43, 124, 0.33);
@@ -109,7 +110,7 @@ button {
   cursor: pointer;
   position: absolute;
   top: 20px;
-  left: 400px;
+  left: 65%;
   width: 40px;
   height: 40px;
   border-radius: 10px;
@@ -175,8 +176,8 @@ p {
 .ilustration {
   padding: 10px;
   position: absolute;
-  left: 55%;
-  width: 35%;
+  right: 30px;
+  width: 25%;
   height: 75%;
   border: solid 6px black;
   border-radius: 40px;
@@ -185,9 +186,7 @@ p {
   align-items: center;
   gap: 1em;
 }
-.aviso {
-  color: red;
-}
+
 .page_exemplo {
   height: 100%;
   width: 100%;
@@ -207,13 +206,24 @@ p {
     }
 }
 @media (max-width: 768px) {
+  .menubar {
+    cursor: pointer;
+    position: fixed;
+    display: block;
+    width: 50px;
+    height: 50px;
+    left: 1px;
+    z-index: 9999;
+  }
   .Barra_lateral {
-    animation: surgir 0.3s ease-out forwards;
-    display: none;
     position: absolute;
-    left: -10px;
-    width: 98.1%;
+    display: none;
+    left: 0;
+    width: 70%;
+    height: 100%;
     z-index: 9998;
+    padding-top: 10px;
+    animation: surgir 0.3s ease-out forwards;
   }
   .decoracao_negrito{
     position: relative;
@@ -240,14 +250,6 @@ p {
   .pagina {
     left: 0;
     width: 94%;
-  }
-  .menubar {
-    position: fixed;
-    display: block;
-    width: 50px;
-    height: 50px;
-    right: 1px;
-    z-index: 9999;
   }
   .ilustration{
     position: absolute;

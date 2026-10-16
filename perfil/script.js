@@ -9,6 +9,8 @@ const perfil = document.querySelector('img.fotoconta');
 const voltar = document.querySelector('img.voltarperfil');
 perfil.addEventListener("click", abrirmenufotos);
 voltar.addEventListener("click", abrirmenufotos);
+sair.addEventListener("click", sairconta);
+deletar.addEventListener("click", deletarconta);
 publicar.addEventListener("click", () => {location.href = "../publicar_documento/publicar.html"});
 let abriumenufoto = true
 let conta = localStorage.getItem("conta")

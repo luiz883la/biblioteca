@@ -1,11 +1,20 @@
+:root{
+  --fundo:#ffffffb9;
+}
 .opt:hover {
   scale: 1.005;
 }
-
+body, html{
+  width: 100vw;
+  height: 100vh;
+}
 body {
-  background: rgb(230, 238, 255);
-  padding: 10px;
-  padding-left: 0;
+  background-image: url(../comecar/midia/Untitled\ Design.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
 }
 h1 {
   font: normal 130% fantasy;
@@ -28,10 +37,53 @@ a {
   top: 30px;
   left: 10px;
   padding-left: 10px;
-  background: rgb(255, 255, 255);
+  background: rgba(233, 233, 233, 0.918);
   border-radius: 20px;
   width: 88.8%;
   height: 90%;
+}
+header{
+  height: 130px;
+}
+.conta {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  width: 50px;
+  height: 5%;
+  padding-left: 1%;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+  text-align: left;
+}
+.pesquisa {
+  position: absolute;
+  background: var(--fundo);
+  font: normal 150% arial;
+  top: 40px;
+  left: 100px;
+  width: 75%;
+  height: 8%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: solid 2px black;
+  box-shadow: 0px;
+}
+img.theere_lines {
+  cursor: pointer;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  padding: 5px;
+  width: 50px;
+  height: auto;
+  border-radius: 10px;
+  background-color: var(--fundo);
 }
 .ico {
   padding: 10px;
@@ -48,62 +100,35 @@ a {
 .titulo {
   font-size: 200%;
 }
-.pesquisa {
-  position: absolute;
-  background: rgb(230, 238, 255);
-  font: normal 150% arial;
-  top: 40px;
-  left: 100px;
-  width: 75%;
-  height: 8%;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: solid 2px black;
-  box-shadow: 0px;
-}
+
 .pesquisa:focus{
   outline: none;
 }
 .faixa {
-  background: rgb(255, 255, 255);
-}
-img.theere_lines {
-  position: absolute;
-  top: 20px;
-  left: 10px;
-  padding: 5px;
-  cursor: pointer;
-  background-color: white;
-  width: 50px;
-  height: auto;
-  border-radius: 10px;
+  background: var(--fundo);
 }
 .menuOP {
-  position: absolute;
-  top: 17%;
-  font: normal 150% arial;
-  background: rgb(255, 255, 255);
-  border-radius: 20px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
+  font: normal 150% arial;
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
   gap: 10px;
   width: 95%;
+  margin: auto;
 }
 .opt {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
   box-shadow: 5px 5px 20px gray;
   background: white;
-  padding-left: 10px;
-  padding-right: 15px;
-  cursor: pointer;
   width: 96.4%;
   height: 5%;
   border-radius: 20px;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  margin: auto;
 }
 .opt > p.tituloOP{
   width: 30%;
@@ -125,22 +150,6 @@ img.theere_lines {
 .acessar {
   width: 10%;
   height: 10%;
-}
-.conta {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  cursor: pointer;
-  font-size: 140%;
-  height: 5%;
-  top: 9%;
-  left: 88%;
-  padding-left: 1%;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 1rem;
-  text-justify: auto;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .foto{
   width: 25px;
@@ -173,11 +182,6 @@ img.theere_lines {
   .opt {
     width: 93%;
   }
-  img.theere_lines {
-    top: 60px;
-    width: 50px;
-    height: auto;
-  }
   .acessar {
     width: 12%;
   }
@@ -204,14 +208,6 @@ img.theere_lines {
   .titulo {
     font-family: fantasy;
     font-size: 200%;
-  }
-  .conta {
-    top: 2%;
-    left: 80%;
-    font-size: 130%;
-    width: 13%;
-    height: 4%;
-    text-align: left;
   }
   .corpo {
     width: 99%;

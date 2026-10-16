@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +8,72 @@
     <title>biblioteca</title>
 </head>
 <body>
+    <header>
+        <a  type="button" class="menu" value="" onclick="
+        document.querySelector('h1').scrollIntoView({
+            behavior: 'smooth',block:'start'
+            });">Conheça minha Historia</a>
+        <a  type="button" class="menu" value="" onclick="
+        document.querySelector('h2#contas').scrollIntoView({
+            behavior: 'smooth',block:'start'
+            });">Paginas</a>
+        <a type="button" class="menu" value="" onclick="
+        document.querySelector('h2#help').scrollIntoView({
+            behavior: 'smooth',block:'start'
+            });">Tutorial</a>
+        <a href="https://forms.gle/ahmg2RZc9oP8dyQm6" target="_blank" class="menu">
+            Avaliar
+        </a>
+    </header>
     <main>
-        <div class="text">
-            <h1>Biblioteca</h1>
-            <p>Venha conhecer meu site, compartilhe suas historias e fatos com agente!(ATENÇÃO: Este site n tem suporte para armazenar dados atualmente, este site pode ser considerados um diario pessoal)</p>
-            <p>Um espaço feito para quem acredita que aprender é uma jornada contínua e coletiva. Aqui, cada resumo de estudo ajuda alguém a avançar, e cada história pessoal serve de inspiração para não desistir. Compartilhe suas descobertas, leia a vivência de outros estudantes e transforme o seu conhecimento em ponte para novas conexões. Juntos, fazemos do aprendizado uma experiência muito mais leve, rica e transformadora.</p>
-        </div>
-        <div class="text">
-            <h2>Conheca nossas contas:</h2>
-            <h2>Git Hub:</h2>
-            <a class="link" href="https://github.com/luiz883la" target="_blank">https://github.com/luiz883la</a>
-            <a class="" href="https://github.com/luiz883la"><img src="midia/github.png" class="img_logos"></a>
-        
-            <h2>Youtube:</h2>
-            <a class="link" href="https://www.youtube.com/@LuizotavioDasilvameirelles" target="_blank">https://www.youtube.com/@LuizotavioDasilvameirelles</a>
-            <a class="" href="https://www.youtube.com/@LuizotavioDasilvameirelles"><img src="midia/youtube.png" class="img_logos"></a>
-        
-        
-        </div>
-        <div class="text">
-            <h2>Como criar minhas historias?</h2>
-            <ul>
-                <li>Clique em começar nesta pagina.</li>
-                <li>Voce ira ser elvado para o menu principal.</li>
-                <li>Faça login ou cadastre-se com nome e senha.</li>
-                <li>Clique no seu perfil e clique em "Publicar Doc."</li>
-                <li>Preencha os formulários e clique em "Concluir".</li>
-                <li>Olhe no final da sua lista e estara o seu relato.</li>
-            </ul>
-        </div>
-        <div class="text">
+        <section class="text">
+            <article>
+                <h1>Biblioteca</h1>
+                <p>Venha conhecer meu site, compartilhe suas historias e fatos com agente!<span class="aviso">(ATENÇÃO: Este site n tem suporte para armazenar dados atualmente, este site pode ser considerados um diario pessoal)</span></p>
+                <p>Um espaço feito para quem acredita que aprender é uma jornada contínua e coletiva. Aqui, cada resumo de estudo ajuda alguém a avançar, e cada história pessoal serve de inspiração para não desistir. Compartilhe suas descobertas, leia a vivência de outros estudantes e transforme o seu conhecimento em ponte para novas conexões. Juntos, fazemos do aprendizado uma experiência muito mais leve, rica e transformadora.</p>
+            </article>
+        </section>
+        <section class="text">
+            <article>
+                <h2 id="contas">Conheca nossas contas:</h2>
+                    <h2>Git Hub:</h2>
+                    <a class="link" href="https://github.com/luiz883la" target="_blank">https://github.com/luiz883la</a>
+                    <a href="https://github.com/luiz883la" target="_blank">
+                        <img src="midia/github.png" class="img_logos github">
+                    </a>
+                    <h2>Youtube:</h2>
+                    <a class="link" href="https://www.youtube.com/@LuizotavioDasilvameirelles" target="_blank">
+                        https://www.youtube.com/@LuizotavioDasilvameirelles
+                    </a>
+                    <a href="https://www.youtube.com/@LuizotavioDasilvameirelles" target="_blank"><img src="midia/youtube.png" class="img_logos yout"></a>
+            </article>
+        </section>
+        <section class="text">
+            <article>
+                <h2 id="help">Como criar minhas historias?</h2>
+                <ul>
+                    <li>Clique em começar nesta pagina.</li>
+                    <li>Voce ira ser elvado para o menu principal.</li>
+                    <li>Faça login ou cadastre-se com nome e senha.</li>
+                    <li>Clique no seu perfil e clique em "Publicar Doc."</li>
+                    <li>Preencha os formulários e clique em "Concluir".</li>
+                    <li>Olhe no final da sua lista e estara o seu relato.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="text">
+            <article>
+                <h2>Avaliacao</h2>
+                <p>
+                    depois de sua visita, va a nossa pagina do github e avalie nossa pagina e como ate chegar ao site e demorado, nos ja fizemos tudo paara voce so ir la e avaliar
+                </p>
+                <a href="https://forms.gle/ahmg2RZc9oP8dyQm6" target="_blank"><h3>Clique aqui!</h3></a>
+            </article>
+        </section>
+        <article class="text">
             <h2>Agora que voce acabou de ler minhas orientações. Clique em "Começar" para entrar!</h2>
             <a href="menu_principal/menu.html"><input type="button" value="Começar" class="button"></a>
-        </div>
+        </article>
     </main>
     <script src="comecar/script.js"></script>
 </body>
