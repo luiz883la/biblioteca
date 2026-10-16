@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Erica+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+/* 1. RESET UNIVERSAL (Evita que bordas e paddings vazem da tela) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+  background: rgb(77, 77, 199);
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 10pt;
+}
+
+.BarraLateral {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 23%;
+  height: 96%;
+  margin: 0;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  font-family: "Roboto Mono";
+}
+
+.buttonpublic,
+.buttonsair,
+.buttondeletar {
+  cursor: pointer;
+  width: 90%;
+  height: 50%;
+  border: 2px solid black;
+  border-radius: 30px;
+  font: bolder 125% "Roboto Mono";
+  background: rgb(77, 77, 199);
+}
+
+.buttondeletar:hover,
+.buttonpublic:hover,
+.buttonsair:hover {
+  background-color: rgb(54, 67, 109);
+}
+
+.nomeconta {
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  font-size: 125%;
+  width: 100%;
+}
+
+.voltar {
+  position: relative;
+  left: -40%;
+  top: 3%;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 20%;
+}
+
+.voltar:hover {
+  transition: ease 0.3s;
+  background-color: rgba(0, 0, 0, 0.185);
+}
+
+.tela {
+  margin: 0;
+  color: black;
+  width: 70%;
+  height: 96%;
+  position: absolute;
+  left: 25%;
+}
+
+.conta2 {
+  position: absolute;
+  top: 10px;
+  left: 4%;
+  font-size: 22pt;
+  font-family: "Roboto Mono";
+}
+
+.cabeca {
+  background: white;
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* Corrigido para não empurrar a tela */
+.fotoconta {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.foto {
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 55%;
+  margin-top: 20px;
+}
+
+.tela > p {
+  text-align: justify;
+  background-color: white;
+  padding: 10px;
+  height: 68%;
+  border-radius: 30px;
+}
+
+.visualizarfotoperfil {
+  background: rgba(0, 0, 0, 0.527);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 75%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.buttonmudarfoto {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.363);
+  font: normal 150% fantasy;
+}
+
+.voltarperfil {
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  top: 15px;
+  left: 15px;
+  background: rgba(255, 255, 255, 0.377);
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .voltar {
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    width: 40px;
+  }
+
+  .BarraLateral {
+    position: relative;
+    top: 10px;
+    left: 0;
+    width: 92%;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .tela > p {
+    font-size: 16pt;
+  }
+
+  .nomeconta {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 1.3em;
+    width: auto;
+  }
+
+  .conta2 {
+    position: relative;
+    top: 15px;
+    left: 7px;
+  }
+
+  .tela {
+    position: relative;
+    left: 0;
+    top: 20px;
+    color: black;
+    width: 92%;
+    height: auto;
+  }
+
+  .buttons {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 98%;
+    margin-top: 15px;
+  }
+
+  .buttondeletar,
+  .buttonsair,
+  .buttonpublic {
+    height: 50px;
+    width: 32%;
+  }
+
+  .fotoconta {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .visualizarfotoperfil {
+    width: 90%;
+    height: 70%;
+  }
+
+  .foto {
+    width: 150px;
+    height: auto;
+  }
+}

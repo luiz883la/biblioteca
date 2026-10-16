@@ -1,0 +1,220 @@
+.opt:hover {
+  scale: 1.005;
+}
+
+body {
+  background: rgb(230, 238, 255);
+  padding: 10px;
+  padding-left: 0;
+}
+h1 {
+  font: normal 130% fantasy;
+  text-align: center;
+}
+hr {
+  width: 97%;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 110%;
+}
+a {
+  color: rgb(5, 5, 5);
+}
+.menu {
+  position: fixed;
+  display: none;
+  animation: surgir 0.3s ease-out forwards;
+  top: 30px;
+  left: 10px;
+  padding-left: 10px;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  width: 88.8%;
+  height: 90%;
+}
+.ico {
+  padding: 10px;
+  width: 6%;
+}
+.voltar {
+  position: absolute;
+  top: 3%;
+  width: 5%;
+  background: rgba(19, 19, 19, 0);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.titulo {
+  font-size: 200%;
+}
+.pesquisa {
+  position: absolute;
+  background: rgb(230, 238, 255);
+  font: normal 150% arial;
+  top: 40px;
+  left: 100px;
+  width: 75%;
+  height: 8%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: solid 2px black;
+  box-shadow: 0px;
+}
+.pesquisa:focus{
+  outline: none;
+}
+.faixa {
+  background: rgb(255, 255, 255);
+}
+img.theere_lines {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: white;
+  width: 50px;
+  height: auto;
+  border-radius: 10px;
+}
+.menuOP {
+  position: absolute;
+  top: 17%;
+  font: normal 150% arial;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 95%;
+}
+.opt {
+  box-shadow: 5px 5px 20px gray;
+  background: white;
+  padding-left: 10px;
+  padding-right: 15px;
+  cursor: pointer;
+  width: 96.4%;
+  height: 5%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.opt > p.tituloOP{
+  width: 30%;
+  font-size: 100%;
+}
+.tituloOP {
+  display: block;
+  color: rgb(0, 0, 0);
+  font: normal 150% arial;
+}
+.dica {
+  position: absolute;
+  display: block;
+  left: 50%;
+  right: 50px;
+  font: normal 100% arial;
+  width: 30%;
+}
+.acessar {
+  width: 10%;
+  height: 10%;
+}
+.conta {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  font-size: 140%;
+  height: 5%;
+  top: 9%;
+  left: 88%;
+  padding-left: 1%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+  text-justify: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.foto{
+  width: 25px;
+  height: 25px;
+}
+.start > h3{
+  text-align: center;
+}
+.start{
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 40px 0px 40px 0px;
+  box-shadow: 5px 5px 20px gray;
+  border-radius: 30px;
+}
+@keyframes surgir{
+    from{
+        opacity: 0;
+        transform: translatey(-10px);
+    }to{
+        opacity: 1;
+        transform: translatey(10px);
+    }
+}
+
+@media (max-width: 768px) {
+  .tituloOP {
+    font-size: 125%;
+  }
+  .opt {
+    width: 93%;
+  }
+  img.theere_lines {
+    top: 60px;
+    width: 50px;
+    height: auto;
+  }
+  .acessar {
+    width: 12%;
+  }
+  .menuOP {
+    width: 92%;
+    height: auto;
+    padding-left: 6px;
+  }
+  .pesquisa {
+    width: 76%;
+    left: 80px;
+    font-size: 115%;
+  }
+  .voltar {
+    width: 15%;
+  }
+  menu {
+    width: 600%;
+  }
+  p {
+    font-size: 150%;
+    white-space: pre-line;
+  }
+  .titulo {
+    font-family: fantasy;
+    font-size: 200%;
+  }
+  .conta {
+    top: 2%;
+    left: 80%;
+    font-size: 130%;
+    width: 13%;
+    height: 4%;
+    text-align: left;
+  }
+  .corpo {
+    width: 99%;
+  }
+}
+ 

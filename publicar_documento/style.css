@@ -1,0 +1,266 @@
+.button_criacao:hover,
+.button_cor:hover,
+.button_texto:hover,
+.button_exemplo:hover {
+  background: rgba(174, 186, 255, 0.33);
+}
+body {
+  display: flex;
+  flex-direction: row;
+  font: normal 15pt arial;
+  min-height: 100vh;
+  min-width: 100%;
+  margin: 0;
+
+}
+.Barra_lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 0;
+  left: 0;
+  align-items: center; 
+  padding-left: 10px;
+  border-right:solid 2px rgb(229, 228, 228);
+  background-color: white;
+}
+button {
+  cursor: pointer;
+  height: 10%;
+  width: 98%;
+  border: solid 0px;
+  background: rgba(234, 237, 255, 0.329);
+  font: normal 150% arial;
+}
+.pagina {
+  color: black;
+  text-align: left;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+.preencher {
+  padding-left: 5px;
+  font-size: 130%;
+  min-width: 98%;
+  height: 34px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: solid 2px black;
+  box-shadow: 0px;
+  
+}
+.preencher:focus{
+  outline: none;
+}
+.continuar {
+  cursor: pointer;
+  align-self: center;
+  width: 88%;
+  height: 40px;
+  font-size: 20pt;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(119, 119, 233);
+  color: white;
+}.continuar:hover {
+  background-color: rgb(117, 117, 230);
+  scale: 103%;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.decoracao_text {
+  width: 95.5%;
+  height: 84%;
+  font-size: 15pt;
+  border: 1px solid #ccc;
+  padding: 12px;
+  background-color: #fff;
+  overflow-y: auto;
+  outline: none;
+}
+.page_text {
+  height: 100%;
+  height: 100%;
+  border: solid -1px white;
+}
+.decoracao_barra {
+  width: 98.6%;
+  height: 10%;
+}
+.decoracao_negrito {
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  left: 350px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(65, 69, 90, 0.268);
+}.negrito:hover {
+  background: rgba(29, 43, 124, 0.33);
+}
+.decoracao_cor {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 400px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(27, 41, 112, 0.534);
+  color: yellow;
+}
+.decoracao_salvar {
+  font-size: large;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  width: 14%;
+  height: 7%;
+  border: 0;
+  border-radius: 10px;
+  background-color: rgb(117, 117, 230);
+  color: white;
+}
+.placaholder {
+  position: absolute;
+  top: 0;
+  right: 500px;
+}
+.colorstyle {
+  cursor: pointer;
+  width: 47%;
+  height: 70px;
+}
+.cabeca {
+  background: rgb(89, 89, 227);
+  border-radius: 20px;
+  padding-left: 5px;
+  width: 80%;
+}
+h1 {
+  font-size: 200%;
+}
+p {
+  font-size: 170%;
+  white-space: pre-line;
+  text-align: justify;
+}
+.corpo {
+  width: 80%;
+  box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.384);
+  text-align: left;
+  background: whitesmoke;
+  border-radius: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#exemplo {
+  width: 80%;
+  background: #333333;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding-left: 15px;
+  white-space: pre-line;
+  font-size: 70%;
+}
+.ilustration {
+  padding: 10px;
+  position: absolute;
+  left: 55%;
+  width: 35%;
+  height: 75%;
+  border: solid 6px black;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.aviso {
+  color: red;
+}
+.page_exemplo {
+  height: 100%;
+  width: 100%;
+}
+.menubar{
+    display: none;
+}
+@keyframes surgir{
+    from{
+      scale: 2;
+      opacity: 0;
+      transform: translatex(10px);
+    }to{
+      scale: 1;
+      opacity: 1;
+      transform: translatex(0px);
+    }
+}
+@media (max-width: 768px) {
+  .Barra_lateral {
+    animation: surgir 0.3s ease-out forwards;
+    display: none;
+    position: absolute;
+    left: -10px;
+    width: 98.1%;
+    z-index: 9998;
+  }
+  .decoracao_negrito{
+    position: relative;
+    left: 0;
+    top: -30px;
+  }
+  .decoracao_salvar{
+    position: relative;
+    top: -110px;
+    left: 60%;
+    height: 40px;
+    width: 20%;
+  }.decoracao_salvar:hover{
+    background-color:  rgb(128, 128, 244);
+  }
+  .decoracao_cor{
+    position: relative;
+    left: 50px;
+    top: -100px;
+  }
+  .decoracao_text{
+    margin-top: 30px;
+  }
+  .pagina {
+    left: 0;
+    width: 94%;
+  }
+  .menubar {
+    position: fixed;
+    display: block;
+    width: 50px;
+    height: 50px;
+    right: 1px;
+    z-index: 9999;
+  }
+  .ilustration{
+    position: absolute;
+    top: 120px;
+    height: 50%;
+  }
+  .continuar{
+    align-self: center;
+    width: 98%;
+  }
+  .checkbox{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+}

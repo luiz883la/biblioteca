@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Erica+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font: normal 15pt arial;
+  background-color: white;
+}
+main{
+  margin: 0;
+  width: 80vw;
+  border: solid 1px black;
+}
+h1,
+h2,
+h3,
+li {
+  margin-top: 0;
+  font-family: "Roboto Mono";
+}
+.text {
+  width: 80%;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+p {
+  text-align: justify;
+  width: 98%;
+}
+
+.img_logos {
+  position: relative;
+  left: 90%;
+  top: -120px;
+  width: 100px;
+  border: solid 3px black;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.img_logos:hover{
+  transform: scale(1.15);
+  transition: transform 0.2s ease;
+}
+
+a.link {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 2px dotted black;
+  width: 80%;
+}
+
+a.link,
+a.link:visited {
+  display: inline-block;
+  max-width: 100%;
+  font-size: 105%;
+  color: rgb(92, 91, 91);
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol {
+  font-size: 18pt;
+}
+
+.button {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  height: 60px;
+  border: 0;
+  border-radius: 30px;
+  background-color: rgb(104, 104, 211);
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+.start:hover {
+  scale: 1.005;
+  background-color: rgb(112, 112, 224);
+}
+
+@media (max-width: 768px) {
+  .img_logos{
+    width: 50px;
+    left: 50px;
+  }
+  a.link{
+    width: 150px;
+  }
+}

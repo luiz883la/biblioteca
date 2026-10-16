@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../midia/favicon.ico" type="image/x-icon" />
+    <title>Publicar documento</title>
+  </head>
+  <body>
+    <img src="../midia/menu.png" class="menubar" />
+    <div class="Barra_lateral">
+      <h1>Centro de Criação</h1>
+      <button class="button_criacao">Criação</button>
+      <button class="button_texto">Texto</button>
+      <button class="button_cor">Cor</button>
+      <button class="button_exemplo">Exemplos</button>
+    </div>
+    <div class="pagina">
+      <div class="tutorial">
+        <h1>Tutorial:</h1>
+        <h2>
+          Para você conseguir publicar algum projeto, precisamos que siga
+          estes passos:
+        </h2>
+        <ol>
+          <li>
+            Você precisa entrar no menu de Criação, clicando no botão na barra
+            lateral escrito <b>"Criação"</b>.
+          </li>
+          <br />
+          <li>
+            Preencha os formulários com o que se pede e clique no botão de
+            <b>"Concluir"</b>.
+          </li>
+          <br />
+          <li>O site irá te direcionar para a seção de estilo e cor.</li>
+          <br />
+          <li>
+            Lá você irá decidir quais cores irá usar na sua <b>publicação</b>.
+          </li>
+        </ol>
+      </div>
+      <div class="modoedicao">
+        <h1>Modo Edição</h1>
+        <p>
+          Você entrou no modo de edição do seu documento. Para editá-lo, basta
+          seguir os passos:
+        </p>
+        <ol>
+          <li>Entre nos modos ao lado como: "Criação", "Texto", etc.</li>
+          <br />
+          <li>Altere tudo o que quiser!</li>
+          <br />
+          <li>
+            Mesmo que não mexa em alguma das abas, entre nela e conclua
+            clicando no botão de "Concluir" ou "Salvar".
+          </li>
+          <br />
+          <li>
+            Você será direcionado para o menu principal, e lá no final seu
+            documento já estará alterado e do jeito que você deixou!
+          </li>
+          <br />
+        </ol>
+      </div>
+      <div class="page_cre">
+        <p class="aviso"></p>
+        <p>Título</p>
+        <input type="text" class="preencher" id="titulo" />
+
+        <p>Autor</p>
+        <input type="text" class="preencher" id="autor" />
+        <p>
+          <input type="checkbox" id="vaiterexemplo" class="checkbox" />Você irá precisar de um campo para exemplos de uma matéria?
+        </p>
+        <p>
+          Você quer manter este documento para você (Privado) ou deixar para outras pessoas verem (Público)?
+        </p>
+        <p>
+          <input type="checkbox" class="checkbox" id="pri" checked />Privado
+          <input type="checkbox" class="checkbox" id="pub" />Público
+        </p>
+        <input type="button" value="Continuar" class="continuar concluir" />
+      </div>
+
+      <div class="page_cor">
+        <div class="ilustration">
+          <div class="cabeca">
+            <h1 class="Titulo">Título</h1>
+            <p class="comando">Autor / Data</p>
+          </div>
+          <div class="corpo">
+            <p class="texto_ilustracao">Texto</p>
+          </div>
+          <div id="exemplo">
+            <p>Exemplo</p>
+          </div>
+        </div>
+
+        <p>Cabeçalho (título, autor, data)</p>
+        <input type="color" value="#5959e3" class="colorstyle colorcabeca" />
+        <p>Texto</p>
+        <input type="color" value="#ffffff" class="colorstyle colortexto" />
+        <p class="textoexemplo_emcima">Exemplo</p>
+        <input type="color" value="#333333" class="colorstyle colorexemplo" />
+        <input type="button" value="Continuar" class="continuar aplicar" />
+      </div>
+
+      <div class="page_text">
+        <div class="decoracao_barra barra">
+          <h2>Página de Textos</h2>
+          <p class="decoracao_negrito negrito"><b>N</b></p>
+          <input type="color" class="decoracao_cor cores" />
+          <input type="button" value="Salvar" class="decoracao_salvar salvar" />
+        </div>
+        <div class="decoracao_text texto" contenteditable="true"></div>
+      </div>
+
+      <div class="page_exemplo">
+        <div class="decoracao_barra barra_exem">
+          <h2>Página de Exemplos</h2>
+          <p class="decoracao_negrito negrito_exem"><b>N</b></p>
+          <input type="color" class="decoracao_cor cores_exem" />
+          <input
+            type="button"
+            value="Salvar"
+            class="decoracao_salvar salvar_exem"
+          />
+        </div>
+        <p class="decoracao_text exemplo" contenteditable="true"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
