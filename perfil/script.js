@@ -16,7 +16,7 @@ let abriumenufoto = true
 let conta = localStorage.getItem("conta")
 let usuario = JSON.parse(localStorage.getItem("usuario") || "{}")
 let usuarioAtual = conta && usuario[conta] ? usuario[conta] : null
-
+console.log(usuario, conta)
 if (nomeConta) {
     nomeConta.innerHTML = conta ? `conta: ${conta}` : 'conta: (nenhuma)'
 }
@@ -43,9 +43,12 @@ function init() {
     }
 }
 function deletarconta() {
-    let Numero_Usuario = localStorage.getItem("quantusuario")
-    let conta = localStorage.getItem("conta")
-    let usuario = JSON.parse(localStorage.getItem("usuario") || "{}")
+    let Numero_Usuario = localStorage.getItem("quantusuario");
+    let conta = localStorage.getItem("conta");
+    let usuario = JSON.parse(localStorage.getItem("usuario") || "{}");
+    if(!JSON.parse(localStorage.getItem("usuario"))){
+        window.href = "../menu_principal/menu.html"
+    }
 
     if (conta == 'Admin') {
         alert('Voce nao pode deletar uma conta admin')
@@ -53,11 +56,11 @@ function deletarconta() {
     }
 
     let verificacao = prompt("Voce tem certeza que quer deletar sua conta? (Responda com 'Sim' ou 'Nao')")
-    if (verificacao == 'sim') {
+    if (verificacao.toLowerCase() == 'sim') {
         delete usuario[conta]
         Numero_Usuario--
 
-        let conta = ''
+        conta = ''
         localStorage.setItem('quantusuario', Numero_Usuario)
         localStorage.setItem('conta', conta)
         localStorage.setItem('usuario', JSON.stringify(usuario))

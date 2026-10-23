@@ -10,12 +10,22 @@
 <body>
     <div class="login">
         <h1><u>Login</u></h1>
-        <p>Nome</p><input type="text" placeholder="Digite seu nome" class="nome" onkeydown="letraMaiuscula()" autofocus>
-        <p class="alerta_nome"></p>
-        <p>Senha</p><input type="text" placeholder="Digite sua senha" class="senha">
-        <p class="alerta_senha"></p>
-        <input type="button" class="button" value="Conectar">
-        <p>Nao tem conta? <a href="../cadastrar/cadastrar.html">Cadastre-se</a></p>
+        <form autocomplete="on" action="script.js">
+            <p>
+                <label for="nome"><span style="color: red;">*</span> Nome:</label>
+                <input type="text" placeholder="Digite seu nome" id="nome" class="nome" onkeydown="letraMaiuscula()" autofocus required autocomplete="username">
+            </p>
+            <p class="alerta_nome"></p>
+            <p>
+                <label for="senha"><span style="color: red;">*</span> Senha:</label>
+                <input type="password" placeholder="Digite sua senha" id="senha" class="senha" required autocomplete="current-password">
+            </p>
+            <input type="button" class="button" value="Conectar">
+        </form>
+
+        <p>
+            Nao tem conta? <a href="../cadastrar/cadastrar.html">Cadastre-se</a>
+        </p>
     </div>
     <script src="script.js"></script>
 </body>

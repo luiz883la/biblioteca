@@ -6,7 +6,7 @@ var aviso_senha = document.querySelector('p.alerta_senha');
 button.addEventListener('click', logar);
 var conta = '';
 var usuario = JSON.parse(localStorage.getItem("usuario") || "{}");
-
+console.log(usuario)
 if (!usuario.Admin) {
     usuario.Admin = { nome: "Luiz", senha: "0509" };
     localStorage.setItem("usuario", JSON.stringify(usuario));
@@ -38,6 +38,7 @@ function logar() {
             localStorage.setItem("conta", conta);
             encontrar = true;
             window.location.href = '../../menu_principal/menu.html';
+            console.log("login foi feito com sucesso!")
             return;
         }
     }

@@ -15,3 +15,4 @@ if (!JSON.parse(localStorage.getItem("livros"))) {}
 console.log(documento);
 console.log(usuario);
 localStorage.setItem("livros", JSON.stringify(documento));
+

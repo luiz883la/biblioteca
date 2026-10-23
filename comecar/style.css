@@ -18,14 +18,13 @@ header {
   align-items: center;
   gap: 20px;
   width: 100%;
-  padding-bottom: 3vh;
   border-bottom: solid 2px black;
   text-align: center;
 }
 .icomenu{
   width: 40px;
 }
-header div{
+.nav{
   padding-left: 10px;
   display: flex;
   width: 100%;
@@ -131,16 +130,16 @@ ol {
   background-color: rgb(112, 112, 224);
 }
 .menucll{
+  position: absolute;
+  right: 10px;
   cursor: pointer;
     width: 40px;
-    position: relative;
-    z-index: 999;
+    height: 40px;
 }.menucll:hover{
   background-color: rgba(0, 0, 0, 0.116);
   border-radius: 50%;
-  header div{
+  .nav{
     display: block;
-    position: fixed;
     top: 0;
     left: 0;
     width: 50%;
@@ -160,17 +159,22 @@ ol {
     top: 0;
     z-index: 999;
   }
-  header{
-    height: 250px; 
-  }
   .menucll:hover{
     background-color: rgba(0, 0, 0, 0.116);
     border-radius: 50%;
   }
+  header{
+    background: transparent;
+
+  }
   .menucll:hover + .nav {
     display: block;
+    flex-direction: row;
   }
   .nav:hover {
     display: block;
+  }
+  .menu{
+    flex-direction: row;
   }
 }
